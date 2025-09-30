@@ -86,4 +86,102 @@ Useful in polynomial manipulation, memory allocation tables, and file systems.
 
 # Algorithms:
 
+## ALGORITHM TO CREATE A SINGLE NODE OF A LINKED LIST
 
+START
+
+Define a structure Node with two fields:
+
+data → to store the value.
+
+next → pointer to the next node.
+
+Create a pointer head of type Node.
+
+Dynamically allocate memory for head using new.
+
+Assign a value (e.g., 10) to head->data.
+
+Set head->next = NULL because there is only one node.
+
+Print the contents of the node (data and next).
+
+Free the allocated memory using delete.
+
+STOP
+
+## ALGORITHM TO ADD MULTIPLE NODES AT THE END OF A LINKED LIST
+
+START
+
+Define a structure Node with:
+
+data → to store integer value
+
+next → pointer to the next node
+
+Define a pointer head and set it to NULL (empty list).
+
+Repeat the following steps for each new value to be inserted:
+
+Create a new node using dynamic memory allocation.
+
+Assign the value to newNode->data.
+
+Set newNode->next = NULL.
+
+If head == NULL, set head = newNode.
+
+Otherwise:
+
+Set temp = head.
+
+Traverse the list until temp->next == NULL.
+
+Set temp->next = newNode.
+
+After all insertions, traverse the list from head to NULL and display the data of each node.
+
+Free the allocated memory by deleting all nodes one by one.
+
+STOP
+
+## ALGORITHM TO ADD MULTIPLE NODES AT THE START OF A LINKED LIST
+
+START
+
+Define a structure Node with:
+
+data → to store integer value
+
+next → pointer to the next node.
+
+Initialize the list with head = NULL.
+
+For each new value to be inserted at the start:
+
+Create a new node using dynamic memory allocation.
+
+Assign the value to newNode->data.
+
+Set newNode->next = head.
+
+Update head = newNode (new node becomes the first node).
+
+After all insertions, traverse the list starting from head until NULL, printing the data of each node.
+
+Free the allocated memory by deleting each node one by one.
+
+STOP
+
+# Conclusion:
+
+The linked list is a dynamic data structure that allows efficient insertion and deletion of nodes compared to arrays.
+
+We successfully created a single node, added multiple nodes at the end, and added multiple nodes at the start.
+
+Linked lists help in understanding pointers, dynamic memory allocation, and node linking in C++.
+
+Traversal of a linked list allows accessing all nodes sequentially.
+
+Overall, the experiment demonstrates how data can be stored and manipulated dynamically using linked lists, providing flexibility over static data structures like arrays.
