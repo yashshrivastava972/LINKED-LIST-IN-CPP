@@ -3,7 +3,9 @@
 // BATCH: E&TC-B2
 // TITLE: TO ADD MULTIPLE NODES AT THE END OF THE LINKED LIST (EXPERIMENT: 17B)
 
-// CODE: #include <iostream>
+// CODE:
+
+#include <iostream>
 using namespace std;
 
 struct Node {
